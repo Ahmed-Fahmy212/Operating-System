@@ -1,17 +1,12 @@
 # Operating-System
 
-
 ##Basics of OS (I/O Structure)
 Cpu device controller memory 
 
 ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/c37e5bd0-c37f-4a14-8335-2eaf556ed69f/145acbf4-9b99-43b8-9b5b-e663008179e0/image.png)
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/c37e5bd0-c37f-4a14-8335-2eaf556ed69f/540e7e9a-95ed-45d1-9b2c-7406d74654d7/image.png)
-
----
-
 ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/c37e5bd0-c37f-4a14-8335-2eaf556ed69f/30fa1ddd-cc48-481d-a317-f3d05c71bed9/image.png)
-
+---
 1- The **device driver** 
 
 - tells the device controller what to do by loading instructions into its registers.
