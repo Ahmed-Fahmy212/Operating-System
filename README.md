@@ -3,9 +3,10 @@
 ##Basics of OS (I/O Structure)
 Cpu device controller memory 
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/c37e5bd0-c37f-4a14-8335-2eaf556ed69f/145acbf4-9b99-43b8-9b5b-e663008179e0/image.png)
+![1](https://github.com/user-attachments/assets/f2797839-d49a-4c44-8f9b-b4e84b276ac5)
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/c37e5bd0-c37f-4a14-8335-2eaf556ed69f/30fa1ddd-cc48-481d-a317-f3d05c71bed9/image.png)
+![2](https://github.com/user-attachments/assets/440209b4-d046-4f59-9e49-0765740240fa)
+
 ---
 1- The **device driver** 
 
@@ -40,5 +41,3 @@ These registers control and monitor the device:
 **Status Register:** Provides information about the device’s status (e.g., ready, busy, error).
 
 ---
-
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/c37e5bd0-c37f-4a14-8335-2eaf556ed69f/08c40862-6a38-4af6-9296-5293b82a797d/image.png)
