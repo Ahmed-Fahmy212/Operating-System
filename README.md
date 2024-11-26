@@ -71,3 +71,145 @@ These registers control and monitor the device:
 
 9. Protection and Security:Example: A password-protected login screen preventing unauthorized access to a computer.
 
+---
+
+1. Multi-Processing Example: Parallel Image Processing
+
+Scenario: You are tasked with processing a batch of high-resolution images. Each image is large, and processing them sequentially is too slow. Multi-processing can divide this task:
+
+Process 1: Reads the image files and sends image chunks to child processes via shared memory.
+
+Process 2: Applies a filter (e.g., Gaussian blur) to a portion of the image.
+
+Process 3: Enhances the image (e.g., adjusts brightness and contrast).
+
+Parent Process: Combines the processed chunks from all child processes and writes the final image to disk.
+
+
+Shared memory is used for passing image data between processes.
+
+Inter-process communication (IPC) ensures synchronization (e.g., semaphores or mutexes).
+
+Processes execute on separate CPU cores for speedup.
+
+
+
+---
+
+2. Multi-Threading Example: Real-Time Stock Market Data Aggregator
+
+Scenario: Build a high-frequency trading application where multiple data streams need to be processed simultaneously.
+
+Thread 1: Connects to the stock market API and continuously fetches raw data.
+
+Thread 2: Processes this raw data (e.g., computes moving averages, volatility).
+
+Thread 3: Updates the user interface with processed data in real time.
+
+Thread 4: Logs the raw and processed data into files for future analysis.
+
+
+Threads share memory to avoid redundant data duplication.
+
+Thread-safe queues or ring buffers are used to pass data between threads.
+
+Mutexes and condition variables ensure synchronization and prevent race conditions.
+
+
+
+---
+
+3. Mixing Multi-Threading and Shared Memory: Autonomous Vehicle Simulation
+
+Scenario: Simulate an autonomous vehicle's sensors and decision-making system.
+
+Main Thread: Controls the simulation loop.
+
+Thread 1: Simulates data from LiDAR sensors (e.g., 3D environment mapping).
+
+Thread 2: Simulates data from cameras (e.g., object detection).
+
+Thread 3: Processes sensor data (e.g., combines LiDAR and camera data into a cohesive map).
+
+Thread 4: Implements decision-making logic (e.g., steering, braking).
+
+Shared Memory: Used to store the latest sensor data for access by processing and decision threads.
+
+
+
+Shared memory with fine-grained locking mechanisms ensures consistency.
+
+Real-time constraints demand careful thread scheduling and priority management.
+
+Optimized algorithms minimize the overhead of context switching.
+
+
+
+---
+
+4. Multi-Processing with Fault Tolerance: Distributed Web Crawler
+
+Scenario: Create a distributed system to crawl and index the web.
+
+Master Process:
+
+Distributes URLs to worker processes.
+
+Collects and aggregates results (e.g., page content and metadata).
+
+
+Worker Processes:
+
+Fetch and parse web pages concurrently.
+
+Use local caching to avoid redundant requests.
+
+
+Shared Memory:
+
+Tracks the list of processed URLs to prevent duplication.
+
+
+Fault Tolerance:
+
+Monitors worker processes.
+
+Restarts processes in case of crashes, ensuring no task is lost.
+
+
+
+Shared memory or databases ensure consistency across processes.
+
+Fault tolerance uses signals and process monitoring to detect failures.
+
+Load balancing ensures even distribution of tasks among processes.
+
+
+
+---
+
+5. Complex Example: Real-Time Multiplayer Game Server
+
+Scenario: Design the backend for a real-time multiplayer game with hundreds of players.
+
+Multi-Processing:
+
+Each game room is a separate process, running on its own core.
+
+The master process manages player connections and assigns players to game rooms.
+
+
+Multi-Threading (within each process):
+
+Thread 1: Handles player movement and physics calculations.
+
+Thread 2: Manages network communication with players (e.g., sending/receiving updates).
+
+Thread 3: Updates the game state and broadcasts changes to players.
+
+
+Shared Memory:
+
+The master process and game room processes share player data (e.g., global rankings, game state).
+
+Use semaphores or spinlocks for synchronizing shared data access.
