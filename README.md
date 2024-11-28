@@ -213,3 +213,85 @@ Shared Memory:
 The master process and game room processes share player data (e.g., global rankings, game state).
 
 Use semaphores or spinlocks for synchronizing shared data access.
+
+# System Calls
+
+System calls are a critical part of any operating system, acting as a communication bridge between user-level programs and the OS kernel. They allow applications to request services such as file access, process control, or memory management in a safe and controlled way.
+
+Why System Calls Are Important
+
+When user programs need access to hardware or core OS functionalities, they cannot directly interact with these resources because of security and abstraction layers. Instead, they use system calls, which safely transition the program into kernel mode to perform the requested operation.
+
+Types of System Calls
+
+1. Process Management:
+Used to create, execute, and terminate processes.
+
+Examples: fork (create a process), exec (replace a process), exit (terminate a process).
+
+
+
+2. File Management:
+Handle file operations like opening, reading, writing, and closing files.
+
+Examples: open, read, write, close.
+
+
+
+3. Device Management:
+Interact with hardware devices such as printers or disks.
+
+Examples: ioctl (device control), read, write.
+
+
+
+4. Information Management:
+Retrieve system or process-related information.
+
+Examples: getpid (get process ID), time (get system time).
+
+
+
+5. Communication:
+Enable communication between processes through mechanisms like pipes or sockets.
+
+Examples: pipe, send, recv.
+
+
+
+6. Memory Management:
+Manage system memory, such as allocating or mapping memory regions.
+
+Examples: mmap, brk.
+
+
+
+
+How System Calls Work
+
+1. Application Request: A program invokes a system call, such as read(fd, buf, size).
+
+
+2. Mode Transition: The system switches from user mode to kernel mode, typically via a software interrupt.
+
+
+3. Kernel Execution: The OS performs the requested operation, such as reading data from a file.
+
+
+4. Result Return: The results or errors are returned to the application, and the system switches back to user mode.
+
+
+
+Real-World Examples
+
+In Linux or Unix systems: open, write, fork, execve.
+
+In Windows systems: CreateProcess, ReadFile, VirtualAlloc.
+
+
+Why System Calls Matter
+
+System calls abstract the complexities of hardware and OS internals, making development easier for programmers. They also provide a secure way to access system resources, ensuring that critical operations like memory and device management are handled safely.
+
+In essence, system calls are the backbone of how applications interact with the underlying operating system, making them indispensable in any computing environment.
+
