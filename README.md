@@ -52,24 +52,6 @@ These registers control and monitor the device:
 7. **Resource Allocation**: Example: The OS assigning CPU time and memory to multiple programs running simultaneously, like a browser and a video editor.
 8. **Accounting**: Example: A cloud service tracking how much CPU and memory resources your virtual machine is using for billing purposes.
 9. **Protection and Security**: Example: A password-protected login screen preventing unauthorized access to a computer.
-# Functionality 
-1. User Interface:Example: The graphical user interface (GUI) provided by Windows or macOS, where users can interact with files and programs through icons and menus.
-
-2. Program Execution:Example: Running a program like Microsoft Word or Google Chrome by clicking its icon.
-
-3. I/O Operations:Example: Reading a file from a USB drive or writing data to a printer.
-
-4. File System Manipulation:Example: Creating, deleting, or renaming a file or folder on your computer.
-
-5. Communications:Example: Sending a message over a chat application like WhatsApp, which involves inter-process communication.
-
-6. Error Detection:Example: A notification popping up when a disk becomes full or a file system becomes corrupted.
-
-7. Resource Allocation:Example: The OS assigning CPU time and memory to multiple programs running simultaneously, like a browser and a video editor.
-
-8. Accounting:Example: A cloud service tracking how much CPU and memory resources your virtual machine is using for billing purposes.
-
-9. Protection and Security:Example: A password-protected login screen preventing unauthorized access to a computer.
 
 ---
 
