@@ -340,10 +340,3 @@ Memory management techniques like allocation, deallocation, and garbage collecti
 Scalability
 
 As applications increase in complexity and size, efficient memory management becomes more challenging, necessitating the use of advanced strategies and algorithms.
-
-
-
-
-
-
-.
