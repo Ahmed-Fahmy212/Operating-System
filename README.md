@@ -6,7 +6,7 @@ Cpu device controller memory
 <img src="https://github.com/user-attachments/assets/f2797839-d49a-4c44-8f9b-b4e84b276ac5" alt="1" width="50%"/>
 
 <img src="https://github.com/user-attachments/assets/440209b4-d046-4f59-9e49-0765740240fa" alt="2" width="50%"/>
-
+ 
 ---
 
 1. The **device driver** 
