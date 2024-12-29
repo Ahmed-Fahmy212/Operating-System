@@ -12,7 +12,7 @@ Cpu device controller memory
 1. The **device driver** 
     - tells the device controller what to do by loading instructions into its registers.
 
-2. The **device controller** 
+2. The **device controller**  
     - reads these instructions and decides how to handle the operation.
     - It transfers data between the device and its internal buffer.
     - When the operation finishes, the **device controller** notifies the device driver via an interrupt.
